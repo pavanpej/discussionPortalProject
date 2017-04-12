@@ -3,13 +3,25 @@
 	<head>
 		<title>LOGIN</title>
 		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<script type="text/javascript">
+			function validateform()
+			{
+				var x =document.forms["myForm"]["usrname"].value;
+				var y=document.forms["myForm"]["designation"].value;
+				if (x==""&&y=="")
+				{
+					alret("Both the fields are mandatory,kindly enter the details to proceed");
+					return false;
+				}
+			}
+		</script>
 	</head>
 	<body>
 		<div class="head">
 			<h1>Varchasva Discussion Portal 2018</h1>
 		</div>
 		<div class="loginBox">
-			<form method="POST" action="entermsg.php">
+			<form name="myForm" method="POST" onsubmit="return validateform()" action="entermsg.php" >
 				<table >
 					<tr>
 						<td>
