@@ -1,7 +1,16 @@
 <?php
 $name =$_POST['usrname'];
 $desg =$_POST['designation'];
-date_default_timezone_set('Asia/Kolkata');
-$dnt= date("d/m/Y__h:i A");
-echo "login details: ".$name." ".$desg." ".$dnt;
 ?>
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Write/View Message</title>
+	</head>
+	<body>
+		<form method="post" action="insertmsg.php">
+			<textarea name="message" rows="20" cols="40"></textarea><br>
+			<input type="submit" value="send">
+		</form>
+	</body>
+</html>
