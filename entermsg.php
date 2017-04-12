@@ -12,5 +12,7 @@ $desg =$_POST['designation'];
 			<textarea name="message" rows="20" cols="40"></textarea><br>
 			<input type="submit" value="send">
 		</form>
+		<iframe src="messages.php" name="msgwin" height="100%" width="600px"></iframe>
+		<p><a href="messages.php" target="msgwin">click here to view/refresh messages window</a></p>
 	</body>
 </html>
