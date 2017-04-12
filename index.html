@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>LOGIN</title>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+	</head>
+	<body>
+		<div class="head">
+			<h1>Varchasva Discussion Portal 2018</h1>
+		</div>
+		<div class="loginBox">
+			<form method="POST" action="entermsg.php">
+				<table >
+					<tr>
+						<td>
+							User Name:
+						</td>
+						<td>
+							<input size="30"type="text" name="usrname" placeholder="enter your name" >
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+						<input type="radio" name="designation" value"guest">Guest &nbsp; <input type="radio" name="designation" value="student-coordinatior">Student Coordinator &nbsp; <input type="radio" name="designation" value="teacher-coordinator">Teacher Coordinator
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<input class="but" type="submit" value="login">
+						</td>
+					</tr>
+				</table>
+			</form>	
+		</div>
+	</body>
+</html>
