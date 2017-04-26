@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="utf-8"/>
+		<meta charset"utf-8"/>
 		<title>LOGIN</title>
-		<link rel="stylesheet" type="text/css" href="style.css"/>
-		<script type="text/javascript">
+		<link rel="stylesheet" type="text/css" href="/chat/styles/style.css"/>
+		<script>
 			function validateform()
 			{
 				var x =document.forms["myForm"]["usrname"].value;
 				var y=document.forms["myForm"]["designation"].value;
-				if (x==""&&y=="")
+				if (x == "" && y == "")
 				{
-					alret("Both the fields are mandatory,kindly enter the details to proceed");
+					alert("both the fields are mandatory, kindly provide the detaiils liste dbelow to proceed");
 					return false;
 				}
 			}
@@ -19,10 +19,10 @@
 	</head>
 	<body>
 		<div class="head">
-			<h1>Chat Portal 2018</h1>
+			<h1>DISCUSSION PORTAL</h1>
 		</div>
 		<div class="loginBox">
-			<form name="myForm" method="POST"  action="entermsg.php" >
+			<form name="myForm" onclick="return validateform();"method="POST"  action="entermsg.php" >
 				<table >
 					<tr>
 						<td>
@@ -34,12 +34,12 @@
 					</tr>
 					<tr>
 						<td colspan="2">
-						<input type="radio" name="designation" value"guest">Guest &nbsp; <input type="radio" name="designation" value="student-coordinatior">Student Coordinator &nbsp; <input type="radio" name="designation" value="teacher-coordinator">Teacher Coordinator
+						<input type="radio" name="designation" value="guest">Guest &nbsp; <input type="radio" name="designation" value="student-coordinatior">Student Coordinator &nbsp; <input type="radio" name="designation" value="teacher-coordinator">Teacher Coordinator
 						</td>
 					</tr>
 					<tr>
 						<td colspan="2">
-							<input class="but" type="submit" value="login" onclick="return validateform()">
+							<input class="but" type="submit" value="login" >
 						</td>
 					</tr>
 				</table>
